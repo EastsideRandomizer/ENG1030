@@ -1,0 +1,15 @@
+\documentclass[12pt]{article}
+\begin{document}
+
+\title{ENG1030 - Opreational Amplifiers }
+\date{7 August, 2012}
+\author{Gordon Ng}
+\maketitle
+
+\pagebreak
+\tableofcontents
+\pagebreak
+\section{Learning Objectives}
+\begin{itemize}
+\item Understand what an amplifier does.
+\end{document}

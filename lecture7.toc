@@ -1,0 +1,13 @@
+\contentsline {section}{\numberline {1}Learning Objectives}{3}
+\contentsline {section}{\numberline {2}What is an amplifier?}{3}
+\contentsline {subsection}{\numberline {2.1}How It Powers}{3}
+\contentsline {subsection}{\numberline {2.2}Single and Dual-Rail Supplies}{3}
+\contentsline {subsubsection}{\numberline {2.2.1}Dual Rail Supply}{3}
+\contentsline {subsubsection}{\numberline {2.2.2}Single Rail Supply}{3}
+\contentsline {section}{\numberline {3}Amplifier's Bandwidth}{3}
+\contentsline {section}{\numberline {4}Opreational Amplifiers}{4}
+\contentsline {section}{\numberline {5}Unity Gain Buffer}{5}
+\contentsline {subsection}{\numberline {5.1}Purpose}{5}
+\contentsline {subsection}{\numberline {5.2}Simple Circuit}{5}
+\contentsline {subsection}{\numberline {5.3}Negative Feedback}{5}
+\contentsline {subsection}{\numberline {5.4}Non-ideal analysis II}{5}

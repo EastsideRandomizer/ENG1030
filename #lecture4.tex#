@@ -1,0 +1,31 @@
+
+\documentclass[12pt]{article}
+\begin{document}
+\section{Lecture 4}
+\subsection{Lumped-Parameter Model}
+\begin{itemize}
+\item Interconnects have zero resistance
+\item All point on a interconnect has same voltage.
+\item Interconnects between elements are called nodes.
+\item Two nodes are only considered as seperate nodes if there is element in between them.
+\end{itemize}
+\subsection{Kirchoff's Current Law}
+The sum of the currents entering any node is zero.
+
+This results in the fact that similar current charges repel each other.
+\subsubsection{Note}
+You just have to be consistent. Choose a reference direction and stick with it all the time. \\
+$-I_x-10+5I_x+2=0$
+
+\subsubsection{Example 2.5}
+$
+i_1-i_3-i_2=0 \\
+i_1-i_4+i_6=0 \\
+i_7+i_6-i_8=0 \\
+$
+
+\subsection{Loops and Branches}
+\begin{itemize}
+\item \textbf{Loop}: A loop is any closed path thtough in which is no node is encountered more than once.
+\item \textbf{Branches}: Equal to number of elements.
+\end{document}

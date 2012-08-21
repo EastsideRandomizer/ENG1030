@@ -1,0 +1,9 @@
+\documentclass[14pt]{article}
+\begin{document}
+\section{}
+\begin{itemize}{labelitemi}{$\bullet$}
+\item First item in the list
+\item Second item
+\item and so on
+\end{itemize}
+\end{document}

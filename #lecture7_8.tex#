@@ -1,0 +1,140 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\begin{document}
+
+\title{ENG1030 - Opreational Amplifiers }
+\date{7 August, 2012}
+\author{Gordon Ng}
+\maketitle
+
+\pagebreak
+\tableofcontents
+\pagebreak
+\section{Learning Objectives}
+\begin{itemize}
+\item Understand what an amplifier does.
+\end{itemize}
+\section{What is an amplifier?}
+\begin{itemize}
+\item Makes things bigger (Mostly voltages, currents, electrical powers)
+\item The outpit should replicate the input waveform.
+\end{itemize}
+\subsection{How It Powers}
+Due to conservation, the energy needed to amplify the signal comes from power supply( also known as \textbf{power rail}.)\\
+The voltage are usualy fixed.
+\subsection{Single and Dual-Rail Supplies}
+\subsubsection{Dual Rail Supply}
+They require two supply connected in series but they are great for high power applications.
+\subsubsection{Single Rail Supply}
+They can burn out speakers.
+\section{Amplifier's Bandwidth}
+Bandwidth roughly translates to how rapidly its out put can change.
+A 20-khz audio amplier's output can change its voltage from positive to negative and back roughly 20,000 times per second.
+\pagebreak
+\section{Opreational Amplifiers}
+It contains many integrated circuits.\\
+It is the basis for many low-signal circuits.
+
+\begin{itemize}
+\item  Current is sourced from the positive supply when need to make the output voltage higher.
+\item Current is sunk to the negative supply when needed to make the output voltage
+\item Output Voltage:
+\begin{displaymath}
+V_o=A_{OL}(v_1-v_2)
+\end{displaymath}
+\item The input voltage must be within the range of supply rail voltage.
+\item A supply bypass capacitors provides current when the current needs it. \textbf{Always Use Them!} It fills up energy when we don't use it and empties when we use ot.
+\item Gain:
+\begin{displaymath}
+Gain=\frac{V_o}{V_s}
+\end{displaymath}
+\begin{displaymath}
+V_{IN}=v_S{R_i}{R_i+R_s}
+\end{displaymath}
+\begin{displaymath}
+V_{out}=\frac{A_oV_{IN}}{R_o+R_L}
+\end{displaymath}
+
+\begin{displaymath}
+\end{displaymath}
+\pagebreak
+\section{Unity Gain Buffer}
+\subsection{Purpose}
+\item It can stop signals flowing in the wrong direction.
+\item Its \textbf{gain is independent of source and load resistances}
+\item It has a gain of 1. $V_{Out}=IN_+=IN_-=V_{IN}$
+\subsection{Simple Circuit}
+\item We take a connection out of output and feed it back to $V_-$
+\subsection{Non-ideal analysis II}
+\begin{displaymath}
+\frac{V_o}{V_s}=\frac{1}{1+\frac{R_o}{R_O+A_OR_I}}
+\end{displaymath}
+\subsection{Intutive Understanding}
+
+\pagebreak
+\section{Ideal Operational Amplifier}
+\item No currents flows into or out of the input.(\textbf{infinite input impedance})
+\item The op-amp's internal volrage Gain,$A_O$ is infinite. Therefore $IN_+=IN_-$
+\item The op-amp's response to $IN_+$ and $IN_-$ changing the same amount in the same direction is zero. This is called \textbf{zero common mode voltage gain}.
+\item The op-amp's output is connected to a perfect (Voltage-controlled) power ssource that has zero impedence.
+\item The op-amp is infinitely fast to respond to any change in input(infinite bandwidth)
+\item These assumptions are only valid where the output connects back to the \textbf{NEGATIVE} terminal
+\pagebreak
+\section{Basic Op-Amp Circuits}
+\item Introduce Virtual Ground
+\subsection{Block Diagram}
+\item It whos what a designer might require of an op-amp circuit. 
+\item It contains no details, only input and output details.
+\subsection{Non-inverting Amplifier}
+\item $V_{out} \succ IN_+=IN_-=V_{input}$ 
+\item This system is still under Negative Feedback.
+\item The value of $V_{out}$ is related to $R_1$ and $R_2$
+\item $\frac{V_{out}}{V_{in}}=1+\frac{R_2}{R_1}$
+\pagebreak
+
+\subsubsection{Practical Implementation}
+\item Should be close to the mean value of supply rails, which is normally 0V.
+\item Choose the op-amp with regard to gain, bandwidth.....
+\item output should be desgined to be always between the supply rail voltages.
+\item Load resistance should be between $1k\Omega$ and $100k\Omega$
+\item the ground connections should come to a common ground plane.
+\item IC should be placed across the gap all the time.
+
+\subsection{Inverting Amplifier}
+\item Positive input terminal is connected to ground.
+\item input signal is connected to the \textbf{negative} terminal.
+\item gain=
+\begin{displaymath}
+\frac{V_o}{V_{in}}=-\frac{R_2}{R_1}
+\end{displaymath}
+
+\subsection{Summing Inverting Amplifier}
+
+\begin{align}
+v_o=-\frac{R}{R_{s1}}V_{s1}-\frac{R}{R_{S2}}V_{S2}
+\end{align}
+
+\pagebreak
+\subsection{Differential Amplifier}
+It has low input impedance.($R_{in}$ should be as large as possible.)
+\begin{align}
+V_o=\frac{R_2}{R_1}(v_{s2}-v_{s1})
+\end{align}
+Total impedence = $R_3 + R_1$
+\subsubsection{Ground Loop}
+As both point may not have a potential difference of zero. It might cause eror in received sensor voltage. \\
+WIth a differenital amplifier the signal is now sent as a difference in voltage between the return wire and receive wire. \\
+Twisted Pair reduces induced voltage due to time-varying magnetic field.
+\subsection{Instrumental Amplifier}
+This solves the problem of low input impedence as the unity gain buffer has very large imput impedance.
+
+The Gain will be the product of the op-amp and the instrumental amplifier.
+\subsection{Common Mode Voltage}
+It acts as a noise which acts on $V_{s1}$ and $V_{S2}$.
+
+\section{Op-amps Design}
+\subsection{DC-Blocking}
+A capacitor blocks DC signal from entering an amplifier.
+ 
+\end{itemize}
+\end{document}

@@ -1,0 +1,8 @@
+\documentclass[12pt]{article}
+\begin{document}
+\section{Voltage Division}
+\begin{itemize}
+\item $i= i_1+i_2 \\
+i=\frac{V}{R_1}+\frac{V}{R_2}\\
+i=V(\frac{1}{R_1}+\frac{1}{R_2}}\\
+i_1=\frac{V}{R_{1}}=\frac{iR_P}{R_1}=I\frac{R_1^-1+R_2^-1}{R_1}$

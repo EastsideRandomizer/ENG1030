@@ -1,0 +1,23 @@
+\contentsline {section}{\numberline {1}Learning Objectives}{3}
+\contentsline {section}{\numberline {2}What is an amplifier?}{3}
+\contentsline {subsection}{\numberline {2.1}How It Powers}{3}
+\contentsline {subsection}{\numberline {2.2}Single and Dual-Rail Supplies}{3}
+\contentsline {subsubsection}{\numberline {2.2.1}Dual Rail Supply}{3}
+\contentsline {subsubsection}{\numberline {2.2.2}Single Rail Supply}{3}
+\contentsline {section}{\numberline {3}Amplifier's Bandwidth}{3}
+\contentsline {section}{\numberline {4}Opreational Amplifiers}{4}
+\contentsline {section}{\numberline {5}Unity Gain Buffer}{5}
+\contentsline {subsection}{\numberline {5.1}Purpose}{5}
+\contentsline {subsection}{\numberline {5.2}Simple Circuit}{5}
+\contentsline {subsection}{\numberline {5.3}Non-ideal analysis II}{5}
+\contentsline {subsection}{\numberline {5.4}Intutive Understanding}{5}
+\contentsline {section}{\numberline {6}Ideal Operational Amplifier}{6}
+\contentsline {section}{\numberline {7}Basic Op-Amp Circuits}{7}
+\contentsline {subsection}{\numberline {7.1}Block Diagram}{7}
+\contentsline {subsection}{\numberline {7.2}Non-inverting Amplifier}{7}
+\contentsline {subsubsection}{\numberline {7.2.1}Practical Implementation}{8}
+\contentsline {subsection}{\numberline {7.3}Inverting Amplifier}{8}
+\contentsline {subsection}{\numberline {7.4}Summing Inverting Amplifier}{8}
+\contentsline {subsection}{\numberline {7.5}Differential Amplifier}{9}
+\contentsline {subsubsection}{\numberline {7.5.1}Ground Loop}{9}
+\contentsline {subsection}{\numberline {7.6}Instrumental Amplifier}{9}
